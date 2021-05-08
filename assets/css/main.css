@@ -1,11 +1,13 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+/*
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+*/
+/* Basic */
 @-ms-viewport {
   width: device-width; }
-
-
-
-
 body {
   -ms-overflow-style: scrollbar; }
 
@@ -60,7 +62,6 @@ ol, ul {
 
 blockquote, q {
   quotes: none; }
-
   blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none; }
@@ -86,7 +87,7 @@ input, select, textarea {
   -ms-appearance: none;
   appearance: none; }
 
-/* pour les differents tailles de polices */
+/* Typography */
 html {
   font-size: 13pt; }
   @media screen and (max-width: 1680px) {
@@ -97,8 +98,7 @@ html {
       font-size: 12pt; } }
   @media screen and (max-width: 480px) {
     html {
-      font-size: 11pt; } 
-  }
+      font-size: 11pt; } }
 
 body {
   background-color: #ffffff;
