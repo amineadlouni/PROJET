@@ -8,9 +8,11 @@
         $password = htmlspecialchars($_POST['password']);
 
         $check = $bdd->prepare('SELECT pseudo, email, password FROM utilisateurs WHERE email = ?');
+        $pseudo  = $bdd->prepare('SELECT pseudo FROM utilisateurs WHERE email = ?');
         $check->execute(array($email));
         $data = $check->fetch();
         $row = $check->rowCount();
+        
 
         if($row == 1)
         {

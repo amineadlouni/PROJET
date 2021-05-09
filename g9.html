@@ -40,51 +40,85 @@
 					<div class="content" style="background-color: rgb(233, 233, 233);">
 						<header  >
 							<h2>Fiche technique :</h2>
-						</header>
+						</header>	
 						<section>
-							<ul class="alt">
-								<li><img src="images/ty1.jpg" width="80%" height="600px" alt="" /></li>
-								<li><img src="images/ty2.jpg" width="80%" height="600px" alt="" /></li>
-								<li><img src="images/ty3.jpg" width="80%" height="600px" alt="" /></li>
-
-							</ul>
+							<table ><tr>
+								<td colspan="2"><img src="images/ty3.jpg" width="100%" height="500px" alt="" /></td>
+								</tr>
+								<tr >
+								<td><img src="images/ty1.jpg" width="100%"  alt="" /></td>
+								<td><img src="images/ty2.jpg" width="100%"  alt="" /></td>
+								</tr>
+								
+								</table>
 						</section>
-<form  action="" method="post">					<b> Le prix est relatif aux options choisies !!</b> <br/><br>
-						<p><b>Version</b><select> 
+<form  action="facture.php" method="post">	
+<input type="hidden" name="prix" value="1590000">
+	<br>
+<h3 align=center> <b>Le prix est relatif aux options choisies !</b></h3>
+ <hr/>
+
+<table >	
+	
+	<tr height=100px>
+			<td><b>Version:</b></td>
+			<td>	<select name="version">
 							<option>3.0 V6 TDI 259 CONFORT+ </option>
 							<option>3.0 V6 TDI 259 ATMOSPHERE+ </option>
 							<option>3.0 V6 TDI 259 ELEGANCE+ </option>
 							<option>3.0 V6 TDI 259 R-LINE </option>
-							</select>  </p>
-	<table ><tr><td><b>Nombre de porte:</b> </td> <td><input type="radio" id="3" name="porte" value="3"> <label for="3">3</label>
-		<input type="radio" id="5" name="porte" value="5"><label for="5">5</label> </td> 	</tr>
+							</select>  
+			</td>
+	</tr>
+
+	<tr height=100px>
+	
+		<td width=50%><b>Nombre de porte:</b></td>
+		<td width=50%><input type="radio" id="3" name="porte" value="3"> <label for="3">3 portes</label></br>
+		<input type="radio" id="5" name="porte" value="5"><label for="5">5 portes	</label> </td>
+	</tr>
 						
 						
-		<tr><td> <b>Jantes:</b> </td> <td> <input type="radio" id="jant1" name="jant" value="big"> <label for="jant1">17 Pouces</label>
-					<input type="radio" id="jant2" name="jant" value="smal"><label for="jant2">19 Pouces</label> </td>	</tr>
-		<tr><td> <b>Boite Vitesse:</b></td> <td> <input type="radio" id="auto" name="boite" value="auto"> <label for="auto">Automatique</label>
+	<tr height=60px>
+			<td> <b>Jantes:</b> </td> <td> <input type="radio" id="jant1" name="jant" value="big"> <label for="jant1">17 Pouces</label>
+					<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type="radio" id="jant2" name="jant" value="smal"><label for="jant2">19 Pouces</label> </td>	
+	</tr>
+
+	<tr height=60px	>
+			<td> <b>Boite Vitesse:</b></td> <td> <input type="radio" id="auto" name="boite" value="auto"> <label for="auto">Automatique</label>
 					<input type="radio" id="manu" name="boite" value="manu"><label for="manu">Manuelle</label> 
-		<b>Puissance Fiscale :</b> 12 cv</td></tr>
+	</tr>
+			
+			
+	<tr height=50px>
+				<td><b>Puissance Fiscale :</b></td><td> 12 cv</td>
+	</tr>
+
 						
-	<tr><td><b>Couleurs Disponibles :</b></td>
+	<tr height=180px><td><b>Couleurs Disponibles :</b></td>
 						
 								<td><input type="radio" id="radio-alpha" name="radio" checked>
-												<label for="radio-alpha">Bleu</label>
-											
-											
-												<input type="radio" id="radio-beta" name="radio">
-												<label for="radio-beta">Noir</label>
-			
-												<input type="radio" id="radio-gamma" name="radio">
-									<label for="radio-gamma">Gris</label></td>	</tr>
+												<label for="radio-alpha">Bleu</label><br>
+									<input type="radio" id="radio-beta" name="radio">
+												<label for="radio-beta">Noir</label><br>
+									<input type="radio" id="radio-gamma" name="radio">
+												<label for="radio-gamma">Gris</label></td>	
+	</tr>
+									<tr>
+										<td><input type="submit" name="submit" value="commandez maintenant" ></td>
+										<td><input type="reset" name="reset" value="Annuler" ></td>
+										
+									</tr>
 					</table>
 						
-							  <a style="color: red;" href="https://www.linkedin.com/in/amine-el-adlouni-7a9060197/">commandez ici !</a>
+				  
 						
 					
-					</div>
-				</div></form>
-			</section>
+				
+</form>
+</div>
+</div>
+</section>
 <!-- Footer -->
 <footer id="footer">
 	<div class="inner">
