@@ -79,6 +79,9 @@
                         break;
                     }
                 }
+                if(isset($_GET['reg_err'])){
+                    $msg="<strong>REUSSI:<STRONG> veuillez acceder a votre nouveau compte</br>";
+                }
                 ?> 
             
             <form action="connexion.php" method="post" align=center >
@@ -144,7 +147,7 @@
 <style>
             .login-form {
                 width: 440px;
-                margin: 50px auto;
+                margin: 10px auto;
                 
             }
             .login-form form {

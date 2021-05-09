@@ -57,6 +57,8 @@
 
                 <div class="login-form">
                     <?php 
+                    $msg=null;
+                    $state=0;
                         if(isset($_GET['reg_err']))
                         {
                             $err = htmlspecialchars($_GET['reg_err']);
@@ -64,49 +66,26 @@
                             switch($err)
                             {
                                 case 'success':
-                                ?>
-                                    <div class="alert alert-success">
-                                        <strong>Succès</strong> inscription réussie !
-                                    </div>
-                                <?php
+                               $msg=' <strong>Succès</strong> inscription réussie !';
+                              $state=1;
                                 break;
         
                                 case 'password':
-                                ?>
-                                    <div class="alert alert-danger">
-                                        <strong>Erreur</strong> mot de passe différent
-                                    </div>
-                                <?php
+                                $msg='<strong>Erreur</strong> mot de passe différent';
                                 break;
         
                                 case 'email':
-                                ?>
-                                    <div class="alert alert-danger">
-                                        <strong>Erreur</strong> email non valide
-                                    </div>
-                                <?php
+                              $msg= '<strong>Erreur</strong> email non valide';
                                 break;
         
                                 case 'email_length':
-                                ?>
-                                    <div class="alert alert-danger">
-                                        <strong>Erreur</strong> email trop long
-                                    </div>
-                                <?php 
+                               $msg=' <strong>Erreur</strong> email trop long';
                                 break;
         
                                 case 'pseudo_length':
-                                ?>
-                                    <div class="alert alert-danger">
-                                        <strong>Erreur</strong> pseudo trop long
-                                    </div>
-                                <?php 
+                             $msg=' <strong>Erreur</strong> pseudo trop long';
                                 case 'already':
-                                ?>
-                                    <div class="alert alert-danger">
-                                        <strong>Erreur</strong> compte deja existant
-                                    </div>
-                                <?php 
+                             $msg=' <strong>Erreur</strong> compte deja existant';
         
                             }
                         }
@@ -131,6 +110,8 @@
                             <input type="password" name="password_retype" class="form-control" placeholder="Re-tapez le mot de passe" required="required" autocomplete="off">
                         </div>
                         <br>  
+                        <?php if(!empty($msg)) echo $msg."<br/>";?>
+                        <br>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary btn-block">Inscription</button>
                         </div>   
@@ -207,4 +188,8 @@
 
 </body>
 </html>
-		
+		<?php
+        if($state==1){
+header("Location: index.php");
+die();}
+?>

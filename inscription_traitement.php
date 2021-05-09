@@ -1,5 +1,7 @@
 <?php 
     require_once 'config.php';
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
 
     if(!empty($_POST['pseudo']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['password_retype']))
     {
@@ -43,8 +45,17 @@
                                 'password' => $password,
                                 'ip' => $ip
                             ));
+                                                    
+                            $to = "$email";
+                            $subject = "Test mail";
+                            $message = "Hello! This is a simple email message.";
+                            $from = "amine-adlouni@outlook.fr";
+                            $headers = "From: $from";
+                            mail($to,$subject,$message,$headers);
+                            
+                            
 
-                            header('Location:inscription.php?reg_err=success');
+                            header('Location:index.php?reg_err=success');
                             die();
                         }else{ header('Location: inscription.php?reg_err=password'); die();}
                     }else{ header('Location: inscription.php?reg_err=email'); die();}
