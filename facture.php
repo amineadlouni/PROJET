@@ -60,6 +60,19 @@
 							{$plus=20000;}
 							elseif($_POST['version']=="2.0L TDI 150 DSG7 Style 1st")
 							{$plus=30000;}
+							
+							elseif($_POST['version']=="Diesel Platinium Edition ")
+							{$plus=100000;}
+							elseif($_POST['version']=="S")
+							{$plus=200000;}
+							elseif($_POST['version']=="GTS")
+							{$plus=320000;}
+							
+							elseif($_POST['version']=="Carrera S Cabriolet")
+							{$plus=280000;}
+							
+							elseif($_POST['version']=="Taycan Turbo")
+							{$plus=460000;}
 							else{$plus="inclue";}
 							
 							if($_POST['boite']=="Automatique"){$plus2=30000;}
@@ -67,7 +80,12 @@
 							if($_POST['jant']=="19-pouces"){$pluss=30000;}
 							elseif($_POST['jant']=="18-Pouces"){$pluss=10000;}
 							else{$pluss="inclue";}
+							
 							if($_POST['puiss']=="12-ch"){$plus3=20000;}
+	     					elseif($_POST['puiss']=="27-cv"){$plus3=20000;}
+							elseif($_POST['puiss']=="30-cv"){$plus3=30000;}
+                            elseif($_POST['puiss']=="29-cv"){$plus3=20000;}
+							elseif($_POST['puiss']=="42-cv"){$plus3=30000;}
 							else{$plus3="inclue";}
 						}
 						
@@ -97,7 +115,7 @@
 						</tr>
 						
 							<tr align="center">
-						<td>Puissance Fiscale</td><td><?php echo $_POST['puiss']?></td><td>Inclue</td>
+						<td>Puissance Fiscale</td><td><?php echo $_POST['puiss']?></td><td><?php echo "$plus3";?></td>
 						</tr>
 						<tr align="center">
 						<td>Couleur</td><td><?php echo $_POST['coul'];?></td><td>Inclue</td>

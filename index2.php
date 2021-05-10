@@ -226,14 +226,14 @@
                 <section>
                     <div class="content">
                         <blockquote>
-                            <p>coordinateur et encadrant du projet</p>
-                            <p>test</p>
+                            <p>Coordinateur et encadrant du projet</p>
+                            
                         </blockquote>
                         <div class="author">
                             <div class="image">
-                                <img src="images/Abdelali_Ennadi.jpg" alt="" />
+                                <img src="images/fahdkaghat.jpg" alt="" />
                             </div>
-                            <p class="credit">- <strong>Abdelali ENNADI</strong> <span>professeur departement G.indus. FST FES </span></p>
+                            <p class="credit">- <strong> Fahd KaghatI</strong> <span>Enseignant chercheur departement G.indus. FST FES </span></p>
                         </div>
                     </div>
                 </section>
@@ -254,7 +254,7 @@
                     <ul class="alt">
                         <li><a href="#">amine.eladlouni@usmba.ac.ma</a></li>
                         <li><a href="#">aimane.elismaili@usmba.ac.ma</a></li>
-                        <li><a href="#">a.ennadi@usmba.ac.ma</a></li>
+                        <li><a href="#">Fahd.kaghat@usmba.ac.ma</a></li>
 
                     </ul>
                 </section>
