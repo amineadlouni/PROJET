@@ -7,7 +7,7 @@
         $email = htmlspecialchars($_POST['email']);
         $password = htmlspecialchars($_POST['password']);
 
-        $check = $bdd->prepare('SELECT pseudo, email, password FROM utilisateurs WHERE email = ?');
+        $check = $bdd->prepare('SELECT pseudo, email, date_insc, password FROM utilisateurs WHERE email = ?');
         $pseudo  = $bdd->prepare('SELECT pseudo FROM utilisateurs WHERE email = ?');
         $check->execute(array($email));
         $data = $check->fetch();
@@ -22,7 +22,9 @@
                 if(password_verify($password, $data['password']))
                 {
                     $_SESSION['user'] = $data['email'];
-                    header('Location: landing.php');
+                    $_SESSION['pseudo'] =$data['pseudo'] ;
+                    $_SESSION['date'] =$data['date_insc'] ;
+                    header('Location: index2.php');
                     die();
                 }else{ header('Location: index.php?login_err=password'); die(); }
             }else{ header('Location: index.php?login_err=email'); die(); }

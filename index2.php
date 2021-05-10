@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    if(!isset($_SESSION['user'])){
+        header('Location:index.php');
+        die();
+    }
+?>
 <!DOCTYPE HTML>
 
 <html>
@@ -12,7 +19,7 @@
 
     <!-- Header -->
     <header id="header" style="background-color: rgb(46, 46, 46);">
-        <a class="logo" href="index.html" style="background-image: -moz-linear-gradient(rgb(80, 46, 46),rgb(129, 46, 46),rgb(170, 26, 26));">Luxious deutsh cars</a>
+        <a class="logo" href="index2.php">Luxurious deutsh cars</a>
         <nav>
             <a href="#menu">Menu</a>
         </nav>
@@ -21,9 +28,11 @@
     <!-- Nav -->
     <nav id="menu">
         <ul class="links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index2.php">Home</a></li>
+            <li><a href="landing.php">profil</a></li>
             <li><a href="#ID1">voitures</a></li>
             <li><a href="#footer">contactez nous</a></li>
+            <li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
         </ul>
     </nav>
 
@@ -32,21 +41,24 @@
         <br/>
 <br/>     
 		<div class="inner">
+       
+ <H3 style="color: rgb(200, 200, 200);text-shadow: rgb(185, 36, 36);"><?php include('date.php');?> ,MONSIEUR <?php echo strtoupper($_SESSION['pseudo']); ?></H3>
+ 
+
             <h1 style="font-size:102px; COLOR: rgb(184, 48, 48);font-weight: 1000;background-image: -moz-linear-gradient(rgb(80, 46, 46),rgb(129, 46, 46),rgb(170, 26, 26));">L.D.C</h1>
-            <p style="color: rgb(255, 255, 255);text-shadow: rgb(185, 36, 36);">Luxious Deutsh Cars</p>
             <p>Fondée par <a href="https://www.linkedin.com/in/amine-el-adlouni-7a9060197/" target="_blank">Amine El adlouni</a> et<a href="https://www.linkedin.com/in/aimane-el-ismaili-ab179a157/" > Aimane El ismaili </a> au but du projet
                de Monsieur Kaghat</p>
                 
           <br/>
+          
            <br/>
         </div>
 
         <video autoplay loop muted playsinline src="images/banner.mp4"></video>
     </section>
     <section style="background-color: rgb(46, 46, 46);background-image: -moz-linear-gradien(grey);">
-        <br>
-
-        <br>
+<BR>
+<BR>
     </section>
     <!-- CTA -->
     <section id="cta" class="wrapper" style="background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(./images/cta01.jpg);">
@@ -72,7 +84,7 @@
                             <a href="g1.html">
                                 <img src="images/touarg_trans.jpg" height="190px" width="260px" alt="" />
                                 <h3 style="color: rgb(255, 255, 255); text-decoration: none ">VOLKSWAGEN TOUAREG 2020 </h3>
-                                       <p  style="color: orange; font-family: Sansita,Georgia,Arial; font-weight: bold
+                                       <p  style="color: WHITE; font-family: Sansita,Georgia,Arial; font-weight: bold
 "> PRIX : 470.000 - 830.000 dh TTC</p>
                         </a>
      </header> 

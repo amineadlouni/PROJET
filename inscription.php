@@ -34,7 +34,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="index.html">Luxious deutsh cars</a>
+				<a class="logo" href="index2.php">Luxurious deutsh cars</a>
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>
@@ -42,11 +42,12 @@
 
 		<!-- Nav -->
 			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="elements.html">Elements</a></li>
-					<li><a href="generic.html">Generic</a></li>
-				</ul>
+			        <ul class="links">
+            <li><a href="index2.php">Home</a></li>
+            <li><a href="landing.php">profil</a></li>
+            <li><a href="#ID1">voitures</a></li>
+            <li><a href="#footer">contactez nous</a></li>
+            <li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
 			</nav>
 
 
@@ -58,7 +59,7 @@
                 <div class="login-form">
                     <?php 
                     $msg=null;
-                    $state=0;
+                   
                         if(isset($_GET['reg_err']))
                         {
                             $err = htmlspecialchars($_GET['reg_err']);
@@ -67,7 +68,7 @@
                             {
                                 case 'success':
                                $msg=' <strong>Succès</strong> inscription réussie !';
-                              $state=1;
+                            
                                 break;
         
                                 case 'password':
@@ -188,8 +189,3 @@
 
 </body>
 </html>
-		<?php
-        if($state==1){
-header("Location: index.php");
-die();}
-?>
