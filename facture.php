@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <!--
 -->
@@ -47,24 +46,29 @@
 						
 						if(isset($_POST['submit'])){
 	                    
-							if($_POST['version']=="confort+")
-							{$plus=0;}
-	                     	elseif($_POST['version']=="ATMOSPHERE+")
+							if($_POST['version']=="ATMOSPHERE+")
 							{$plus=100000;}
 							elseif($_POST['version']=="ELEGANCE+")
 							{$plus=200000;}
 							elseif($_POST['version']=="R-LINE")
 							{$plus=300000;}
-							else{$plus="inclue";}
-
-							if($_POST['jant']=="14-pousse"){$pluss=+30000;}
-							else{$pluss="inclue";}
+						
 							
-							if($_POST['jant']=="19-pousse"){$pluss=+30000;}
-							else{$pluss="inclue";}
+							elseif($_POST['version']=="1.5 eTSI 150 DSG7 Life 1st")
+							{$plus=10000;}
+							elseif($_POST['version']=="2.0L TDI 150 DSG7 Life 1st")
+							{$plus=20000;}
+							elseif($_POST['version']=="2.0L TDI 150 DSG7 Style 1st")
+							{$plus=30000;}
+							else{$plus="inclue";}
 							
 							if($_POST['boite']=="Automatique"){$plus2=30000;}
-							else{$plus2="Inclue";}
+							else{$plus2="inclue";}
+							if($_POST['jant']=="19-pouces"){$pluss=30000;}
+							elseif($_POST['jant']=="18-Pouces"){$pluss=10000;}
+							else{$pluss="inclue";}
+							if($_POST['puiss']=="12-ch"){$plus3=20000;}
+							else{$plus3="inclue";}
 						}
 						
 	
@@ -109,12 +113,14 @@
 					</div>
 					<br>
 						 
-						<?php if($plus=="inclue"){$plus=0;}
+						<?php  if($plus=="inclue"){$plus=0;}
 						      if($pluss=="inclue"){$pluss=0;}
-						      if($plus2=="Inclue"){$plus2=0;}
-						$som=470000+$plus+$pluss+$plus2;
+						        if($plus2=="inclue"){$plus2=0;} 
+					        	if($plus3=="inclue"){$plus3=0;};
+						$som=$_POST['prix']+$plus+$pluss+$plus2+$plus3;
+						
 						?>
-							
+						<hr/>
 						<h2 align="right"></h> totale à payer : <?php echo "$som Dh";?></h2>
 						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align=right>
 <input type="hidden" name="cmd" value="_xclick">
