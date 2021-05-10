@@ -53,17 +53,55 @@
 							{$plus=200000;}
 							elseif($_POST['version']=="R-LINE")
 							{$plus=300000;}
+							else{$plus="inclue";}
+							
+							if($_POST['jant']=="19-pousse"){$pluss=+30000;}
+							else{$pluss="inclue";}
+							
+							if($_POST['boite']=="Automatique"){$plus2=30000;}
+							else{$plus2="Inclue";}
 						}
+						
 	
 					?>	
-					<table border="0" >
+					<table border="0"  >
 						<th colspan="3" width="1000px"></th>
 						<tr align="center">
-							<td ></td><td><h3>specification</h3></td><td><h3>prix</h3></td>
+							<th ><h3>Options que vous avez choisies</h3></th><th><h3>specification</h3></th><th><h3>prix d'option</h3></th>
+							</tr>
+				<tr align="center" height="70">
+							<td >Prix Sans Options</td><td>-----------></td><td><?php  echo  $_POST['prix'];?></td>		
+							
+						</tr>
+				<tr align="center">
+							<td >Version</td><td><?php echo $_POST['version'];?></td><td><?php  echo $plus;?></td>
+		    	</tr>
+						<tr align="center">
+						<td>Nombre de porte</td><td><?php echo  $_POST['porte'];?></td><td>Inclue</td>
 						</tr>
 						<tr align="center">
-							<td >version:</td><td><?php echo $_POST['version'];?></td><td><?php echo $plus;?></td>
+						<td>Jantes</td><td><?php echo $_POST['jant'];?></td><td><?php echo "$pluss";?></td>
 						</tr>
-					</table>
+							<tr align="center">
+						<td>Boite à vitesse</td><td><?php echo $_POST['boite'];?></td><td><?php echo "$plus2";?></td>
+						</tr>
 						
+							<tr align="center">
+						<td>Puissance Fiscale</td><td><?php echo $_POST['puiss']?></td><td>Inclue</td>
+						</tr>
+						<tr align="center">
+						<td>Couleur</td><td><?php echo $_POST['coul'];?></td><td>Inclue</td>
+						</tr>
+						<hr/>
+					
+						
+					</table>
+						 
+						<?php if($plus=="inclue"){$plus=0;}
+						      if($pluss=="inclue"){$pluss=0;}
+						      if($plus2=="Inclue"){$plus2=0;}
+						$som=470000+$plus+$pluss+$plus2;
+						?>
+						<hr/>
+						<h2 align="right"></h> totale à payer : <?php echo "$som Dh";?></h2>
 						
