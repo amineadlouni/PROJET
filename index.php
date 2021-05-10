@@ -52,7 +52,7 @@
 
 
 		<!-- Main -->
-			<section id="main" class="wrapper" style="background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(./images/cta01.jpg); background-size :100% 150%">
+			<section id="main" class="wrapper" style="background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(./images/cta0b.jpg); background-size :100% 140%">
 				
 				
 

@@ -52,7 +52,7 @@
 
 
 		<!-- Main -->
-			<section id="main" class="wrapper" style="background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(./images/cta01.jpg); background-size :100% 150%">
+			<section id="main" class="wrapper" style="background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(./images/cta0b.jpg); background-size :100% 100%">
 				
 				
 
@@ -114,7 +114,7 @@
                         <?php if(!empty($msg)) echo $msg."<br/>";?>
                         <br>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary btn-block">Inscription</button>
+                            <button type="submit" class="btn btn-primary btn-block">s'inscrire</button>
                         </div>   
                     </form>
                 </div>
