@@ -14,7 +14,8 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="index2.php">Luxurious deutsh cars</a>
+				        <a class="logo" href="landing.php"><font color=red>PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>
@@ -53,6 +54,7 @@
 						</section>
 				<form  action="facture.php" method="post">	
 <input type="hidden" name="prix" value="300000">
+<input type="hidden" name="car" value="2">
 	<br/>
 <h3 align="center"> <b>Le prix est relatif aux options choisies !</b></h3><h4 align="center">à partir de 300.000 dh, jusqu'à 390.000 dh</h4> 
  <hr/>

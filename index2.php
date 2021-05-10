@@ -19,7 +19,7 @@
 
     <!-- Header -->
     <header id="header" style="background-color: rgb(46, 46, 46);">
-        <a class="logo" href="index2.php">Luxurious deutsh cars</a>
+        <a class="logo" href="landing.php"><font color=red>PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
         <nav>
             <a href="#menu">Menu</a>
         </nav>
@@ -45,7 +45,7 @@
  <H3 style="color: rgb(200, 200, 200);text-shadow: rgb(185, 36, 36);"><?php include('date.php');?> ,MONSIEUR <?php echo strtoupper($_SESSION['pseudo']); ?></H3>
  
 
-            <h1 style="font-size:102px; COLOR: rgb(184, 48, 48);font-weight: 1000;background-image: -moz-linear-gradient(rgb(80, 46, 46),rgb(129, 46, 46),rgb(170, 26, 26));">L.D.C</h1>
+            <h1 style="font-size:102px; COLOR: rgb(184, 48, 48);font-weight: 1000;background-image: -moz-linear-gradient(rgb(80, 46, 46),rgb(129, 46, 46),rgb(170, 26, 26));">D.C.F</h1>
             <p>Fondée par <a href="https://www.linkedin.com/in/amine-el-adlouni-7a9060197/" target="_blank">Amine El adlouni</a> et<a href="https://www.linkedin.com/in/aimane-el-ismaili-ab179a157/" > Aimane El ismaili </a> au but du projet
                de Monsieur Kaghat</p>
                 

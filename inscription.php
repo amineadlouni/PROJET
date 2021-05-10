@@ -34,7 +34,8 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="index2.php">Luxurious deutsh cars</a>
+				        <a class="logo" href="landing.php"><font color=red>PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>

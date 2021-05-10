@@ -14,7 +14,8 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="index2.php">Luxurious deutsh cars</a>
+				        <a class="logo" href="landing.php"><font color=red>PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>
@@ -24,9 +25,10 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index2.php">Home</a></li>
-					<li><a href="index2.php">Elements</a></li>
-					<li><a href="generic.html">Generic</a></li>
-				</ul>
+					<li><a href="landing.php">profil</a></li>
+					<li><a href="index2.php#ID1">voitures</a></li>
+					<li><a href="#footer">contactez nous</a></li>
+					<li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
 			</nav>
 
 		<!-- Heading -->
@@ -42,15 +44,18 @@
 							<h2>Fiche technique :</h2>
 						</header>
 						<section>
-							<ul class="alt">
-								<li><img src="images/911.jpg" width="80%" height="600px" alt="" /></li>
-								<li><img src="images/912.jpg" width="80%" height="600px" alt="" /></li>
-								<li><img src="images/913.jpg" width="80%" height="600px" alt="" /></li>
-
-							</ul>
+							<table ><tr>
+								<td colspan="2"><img src="images/912.jpg" width="100%" height="500px" alt="" /></td>
+								</tr>
+								<tr >
+								<td width=50%><img src="images/913.jpg" width="100%"  alt="" /></td>
+								<td width=50%><img src="images/911.jpg" width="100%"  alt="" /></td>
+								</tr>
+								</table>
 						</section>
 						<form  action="facture.php" method="post">	
 <input type="hidden" name="prix" value="1200000">
+<input type="hidden" name="car" value="8">
 	<br/>
 <h3 align="center"> <b>Le prix est relatif aux options choisies !</b></h3><h4 align="center">à partir de <b>1.200.000 dh</b> , jusqu'à <b>1.520.000  dh</b></h4> 
  <hr/>
@@ -123,8 +128,6 @@
 					
 				
 </form>
-							</div>
-				</div>
 			</section>
 <!-- Footer -->
 <footer id="footer">

@@ -5,25 +5,6 @@
         die();
     }
 ?>
-<!--DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="author" content="NoS1gnal"/>
-
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-            <title>Connexion</title>
-        </head>
-        <body>
-        
-        
-        
-        </body>
-</html>-->
-
-
 
 
 <!DOCTYPE HTML>
@@ -42,7 +23,8 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="index2.php">Luxurious deutsh cars</a>
+				        <a class="logo" href="landing.php"><font color=red>PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>
@@ -67,12 +49,19 @@
             <div class="container">
             <div class="col-md-12">
           
-
+            <?php 
+                       if(isset($_GET['btn']))
+                       $_SESSION['nbr']=0;
+                       
+                       ?> 
 
                 <div class="text-center">
                         <h1 >PROFIL</h1>
-                        <h4 align=right>bonjour, <?php echo $_SESSION['pseudo']; ?> ,vous avez 0 commandes</h4>
-                        <hr />
+                        <h4 align=right>bonjour, <?php echo $_SESSION['pseudo']; ?> ,vous avez <font color=RED> <?php echo $_SESSION['nbr']; ?> </font> commandes actives</h4>
+                        <form method="get" align=right ><button type="submit" class="small" onclick="location.href='landing.php'" name="btn" >suprimer les commandes</button></form>
+                    
+                       
+                       <hr />
 
                         <fieldset>
                             <label>information</label>

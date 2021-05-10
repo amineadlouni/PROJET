@@ -1,3 +1,11 @@
+<?php 
+    session_start();
+    if(!isset($_SESSION['user'])){
+        header('Location:index.php');
+        die();
+    }
+?>
+
 <!DOCTYPE HTML>
 <!--
 -->
@@ -14,7 +22,8 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="index2.php">Luxurious deutsh cars</a>
+				        <a class="logo" href="landing.php"><font color=red>PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>
@@ -25,14 +34,28 @@
 				<ul class="links">
 					<li><a href="index2.php">Home</a></li>
 					<li><a href="landing.php">profil</a></li>
-					<li><a href="#ID1">voitures</a></li>
+					<li><a href="index2.php#ID1">voitures</a></li>
 					<li><a href="#footer">contactez nous</a></li>
 					<li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
 			</nav>
 
 		<!-- Heading -->
-			<div id="heading" style="background-image:url(./images/to1.jpg)">
-				<h1>volkswagen touareg 2020</h1>
+			<div id="heading" style="background-image:url(./images/<?php 
+			
+			$a=array("0","to1","gf81","ti1","art3","pst2","jt2","ca2","912","ty2" );
+			$b=array("0","volkswagen touareg","volkswagen golf 8","volkswagen tiguan","volkswagen arteon","volkswagen passat","volkswagen jetta","porsche cayenne","porsche 911","porsche tycan" );
+			for($i=1;$i<=10;$i++){
+				if ($i==$_POST['car'])
+				{echo $a[$i];
+				$c=$b[$i];
+				}
+
+			}
+
+			?>.jpg)">
+
+		
+				<h1><?php echo $c;?> </h1>
 			</div>
 
 		<!-- Main -->
@@ -45,6 +68,7 @@
 						<?php
 						
 						if(isset($_POST['submit'])){
+							$_SESSION['nbr']+=1;
 	                    
 							if($_POST['version']=="ATMOSPHERE+")
 							{$plus=100000;}
@@ -139,7 +163,8 @@
 						
 						?>
 						<hr/>
-						<h2 align="right"></h> totale à payer : <?php echo "$som Dh";?></h2>
+						<h2 align="right"></h> totale à payer : <?php echo number_format($som, 2, ',', ' ')." Dh TTC";?></h2>
+
 						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align=right>
 <input type="hidden" name="cmd" value="_xclick">
 <input type="hidden" name="business" value="amine.adlouni29@gmail.com">

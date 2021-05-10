@@ -14,7 +14,8 @@
 
 		<!-- Header -->
 			<header id="header">
-				<a class="logo" href="index2.php">Luxurious deutsh cars</a>
+				        <a class="logo" href="landing.php"><font color=red>PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>
@@ -24,14 +25,15 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index2.php">Home</a></li>
-					<li><a href="index2.php">Elements</a></li>
-					<li><a href="generic.html">Generic</a></li>
-				</ul>
+					<li><a href="landing.php">profil</a></li>
+					<li><a href="index2.php#ID1">voitures</a></li>
+					<li><a href="#footer">contactez nous</a></li>
+					<li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
 			</nav>
 
 		<!-- Heading -->
 			<div id="heading" style="background-image:url(./images/vwlogo.jpg)">
-				<h1>PORSCHE TYCAN 2020</h1>
+				<h1>PORSCHE TYCAN</h1>
 			</div>
 
 		<!-- Main -->
@@ -54,6 +56,7 @@
 						</section>
 <form  action="facture.php" method="post">	
 <input type="hidden" name="prix" value="1000000">
+<input type="hidden" name="car" value="9">
 	<br/>
 <h3 align="center"> <b>Le prix est relatif aux options choisies !</b></h3><h4 align="center">à partir de <b>1.000.000 dh</b> , jusqu'à <b>1.500.000  dh</b></h4> 
  <hr/>
