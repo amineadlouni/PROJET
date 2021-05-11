@@ -11,7 +11,7 @@
 -->
 <html>
 	<head>
-		<title>TOUAREG 2020</title>
+		<title>Facture </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -85,6 +85,11 @@
 							elseif($_POST['version']=="2.0L TDI 150 DSG7 Style 1st")
 							{$plus=30000;}
 							
+							elseif($_POST['version']=="2.0 TDI ADVANCE")
+							{$plus=20000;}
+							elseif($_POST['version']=="2.0 TDI ELEGANCE")
+							{$plus=30000;}
+							
 							elseif($_POST['version']=="Diesel Platinium Edition ")
 							{$plus=100000;}
 							elseif($_POST['version']=="S")
@@ -130,6 +135,9 @@
 		    	</tr>
 						<tr align="center">
 						<td>Nombre de porte</td><td><?php echo  $_POST['porte'];?></td><td>Inclue</td>
+						</tr>
+						<tr align="center">
+						<td>Modèle</td><td>2020</td><td>Inclue</td>
 						</tr>
 						<tr align="center">
 						<td>Jantes</td><td><?php echo $_POST['jant'];?></td><td><?php echo "$pluss";?></td>

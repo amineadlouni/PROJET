@@ -14,7 +14,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				        <a class="logo" href="landing.php"><font color=red>PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+				        <a class="logo" href="landing.php"><font color="red">PROFIL : </font> <?php echo strtolower($_SESSION['user']); ?></a>
 
 				<nav>
 					<a href="#menu">Menu</a>
@@ -29,10 +29,11 @@
 					<li><a href="index2.php#ID1">voitures</a></li>
 					<li><a href="#footer">contactez nous</a></li>
 					<li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
+				</ul>
 			</nav>
 
 		<!-- Heading -->
-			<div id="heading" style="background-image:url(./images/vwlogo.jpg)">
+		<div id="heading" style="background-image:url(./images/logoP.jpg)">
 				<h1>PORSCHE 911 2020</h1>
 			</div>
 
@@ -48,8 +49,8 @@
 								<td colspan="2"><img src="images/912.jpg" width="100%" height="500px" alt="" /></td>
 								</tr>
 								<tr >
-								<td width=50%><img src="images/913.jpg" width="100%"  alt="" /></td>
-								<td width=50%><img src="images/911.jpg" width="100%"  alt="" /></td>
+								<td width="50%"><img src="images/913.jpg" width="100%" height="350"   alt="" /></td>
+								<td width="50%"><img src="images/P4.jpg" width="100%" height="350"  alt="" /></td>
 								</tr>
 								</table>
 						</section>
@@ -114,7 +115,10 @@
 									<input type="radio" id="radio-beta" name="coul" value="Grise" >
 												<label for="radio-beta">Gris</label><br>
 									<input type="radio" id="radio-gamma" name="coul" value="Blan">
-												<label for="radio-gamma">Blache</label></td>	
+												<label for="radio-gamma">Blache</label><br>
+				
+									<input type="radio" id="radio-gamm" name="coul" value="Rouge">
+												<label for="radio-gamm">Rouge</label></td>
 	</tr>
 									<tr >
 										<td></td>
