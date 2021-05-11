@@ -1,23 +1,3 @@
-<!--DOCTYPE html>
-    <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <meta name="author" content="NoS1gnal"/>
-
-            <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-            <title>Connexion</title>
-        </head>
-        <body>
-        
-        
-        
-        </body>
-</html>-->
-
-
-
 
 <!DOCTYPE HTML>
 
@@ -35,7 +15,7 @@
 		<!-- Header -->
 			<header id="header">
 				       <span><button class="small" onclick="location.href='index2.php'">Deutsch cars FES </button></span> 
-				        <a class="logo" href="landing.php"><font color=red>PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+				    
 
 
 				<nav>

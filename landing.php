@@ -102,10 +102,10 @@
                         <br>
                         <table>
                             <TR height=100px>
-                               <td><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></td><td width=20px></td>
+                               <td><button class="primary  small" onclick="location.href='deconnexion.php'" id="pass">Déconnexion</button></td><td width=20px></td>
                        <form method="post" >
                            
-                           <td><input class="small" type="submit" name="s1" value="changer le mote de passe"></td>
+                           <td><button class="small" onclick="location.href='landing.php#pass'" type="submit" name="s1" >changer le mote de passe</button></td>
                            <tr>
                            </table>
                        </form>
@@ -114,8 +114,8 @@
             if(isset($_POST['s1'])){
         
 ?>
-<fieldset> 
-<div class="modal-body">
+<fieldset > 
+<div class="modal-body" > 
 <form action="layouts/change_password.php" method="POST">
     <label for=\'current_password\'>Mot de passe actuel</label>
     <input type="password" id="current_password" name="current_password" class="form-control" required/>
