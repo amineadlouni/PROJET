@@ -155,15 +155,15 @@
 						
 						<hr/>
 					
-						
+					<div align=left>
 					</table>
 					<br>
 					<br>
-					<hr>
 					</div>
 					<br>
 						 
-						<?php  if($plus=="inclue"){$plus=0;}
+						<?php 
+						 if($plus=="inclue"){$plus=0;}
 						      if($pluss=="inclue"){$pluss=0;}
 						        if($plus2=="inclue"){$plus2=0;} 
 					        	if($plus3=="inclue"){$plus3=0;};
@@ -171,24 +171,75 @@
 						
 						?>
 						<hr/>
-						<h2 align="right"></h> totale à payer : <?php echo number_format($som, 2, ',', ' ')." Dh TTC";?></h2>
 
-						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" align=right>
-<input type="hidden" name="cmd" value="_xclick">
-<input type="hidden" name="business" value="amine.adlouni29@gmail.com">
-<input type="hidden" name="lc" value="US">
-<input type="hidden" name="button_subtype" value="services">
-<input type="hidden" name="no_note" value="0">
-<input type="hidden" name="currency_code" value="USD">
-<input type="hidden" name="tax_rate" value="3.000">
-<input type="hidden" name="shipping" value="250.00">
-<input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHostedGuest">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+						<h2 align="right">totale à payer : <?php echo number_format($som, 2, ',', ' ')." Dh HT";?></h2>
+						<div align=right>
+						<table float=none >
+						
+					<tr  >
+						
+		
 
+                   <td valign=bottom >
+					<?php
+                    
+						IF($_POST['car']==1 || $_POST['car']==2 || $_POST['car']==3 || $_POST['car']==4 || $_POST['car']==5 || $_POST['car']==6 ){
+						?>
+						<img style="float: left;" src="./images/logovv.ico" >
+							<?php
+						}
+						else{	
+							?>
+						<img style="float: left;margin-top:50px" src="./images/logopp.ico" >
+							<?php
+						}
+						?>
+						
+				
+	
+					</td>
+<td width=1000px> 
+					<!-- paypal -->
+					<div id="smart-button-container">
+      <div style="text-align: center;">
+        <div id="paypal-button-container"></div>
+      </div>
+    </div>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+  <script>
+    function initPayPalButton() {
+      paypal.Buttons({
+        style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'buynow',
+          
+        },
 
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{"amount":{"currency_code":"USD","value":561.03,"breakdown":{"item_total":{"currency_code":"USD","value":1},"shipping":{"currency_code":"USD","value":560},"tax_total":{"currency_code":"USD","value":0.03}}}}]
+          });
+        },
 
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Transaction completed by ' + details.payer.name.given_name + '!');
+          });
+        },
+
+        onError: function(err) {
+          console.log(err);
+        }
+      }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+  </script>	
+	<!-- end paypal-->
+</td></tr>
+</table>	
+						</div>
 
 
 			</section>
