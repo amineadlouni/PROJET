@@ -19,7 +19,9 @@
 
     <!-- Header -->
     <header id="header" style="background-color: rgb(46, 46, 46);">
-        <a class="logo" href="landing.php"><font color=red>PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+       <span><button class="small" onclick="location.href='index2.php'">Deutsch cars FES </button></span> 
+				        <a class="logo" href="landing.php"><font color=red>PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+
         <nav>
             <a href="#menu">Menu</a>
         </nav>

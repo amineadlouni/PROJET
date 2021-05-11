@@ -23,7 +23,7 @@
                 {
                     $_SESSION['user'] = $data['email'];
                     $_SESSION['pseudo'] =$data['pseudo'];
-                    $_SESSION['date'] =$data['date_insc'];
+                    $_SESSION['date'] =$data['date_insc'];  
                     $_SESSION['nbr'] ="0";
                     header('Location: index2.php');
                     die();
