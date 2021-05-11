@@ -1,9 +1,16 @@
+<?php 
+    session_start();
+    if(!isset($_SESSION['user'])){
+        header('Location:index.php');
+        die();
+    }
+?>
 <!DOCTYPE HTML>
 <!--
 -->
 <html>
 	<head>
-		<title>PORSCHE tycan 2020</title>
+		<title>golf 8</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -14,9 +21,8 @@
 
 		<!-- Header -->
 			<header id="header">
-				       <span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
+				<span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
 				        <a class="logo" href="landing.php"><font color="red">MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
-
 
 				<nav>
 					<a href="#menu">Menu</a>
@@ -25,18 +31,18 @@
 
 		<!-- Nav -->
 			<nav id="menu">
-				<ul class="links">
-					<li><a href="index2.php">Home</a></li>
-					<li><a href="landing.php">profil</a></li>
-					<li><a href="index2.php#ID1">voitures</a></li>
-					<li><a href="#footer">contactez nous</a></li>
-					<li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
+			        <ul class="links">
+            <li><a href="index2.php">Home</a></li>
+            <li><a href="landing.php">profil</a></li>
+            <li><a href="#ID1">voitures</a></li>
+            <li><a href="#footer">contactez nous</a></li>
+            <li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
 				</ul>
 			</nav>
 
 		<!-- Heading -->
-		<div id="heading" style="background-image:url(./images/logoP.jpg)">
-				<h1>PORSCHE TYCAN</h1>
+			<div id="heading" style="background-image:url(./images/vwlogo.jpg)">
+				<h1>volkswagen golf 8 </h1>
 			</div>
 
 		<!-- Main -->
@@ -45,33 +51,33 @@
 					<div class="content" style="background-color: rgb(233, 233, 233);">
 						<header align="center" >
 							<h2>Fiche technique :</h2>
-						</header>	
+						</header>
 						<section>
 							<table ><tr>
-								<td colspan="2"><img src="images/ty3.jpg" width="100%" height="500px" alt="" /></td>
+								<td colspan="2"><img src="images/gf81.jpg" width="100%" height="500px" alt="" /></td>
 								</tr>
 								<tr >
-								<td><img src="images/ty1.jpg" width="100%"  alt="" /></td>
-								<td><img src="images/ty2.jpg" width="100%"  alt="" /></td>
+								<td width="50%"><img src="images/gf82.jpg" width="100%" height="350"  alt="" /></td>
+								<td width="50%"><img src="images/gf83.jpg" width="100%" height="350"  alt="" /></td>
 								</tr>
-								
 								</table>
 						</section>
-<form  action="facture.php" method="post">	
-<input type="hidden" name="prix" value="1000000">
-<input type="hidden" name="car" value="9">
+				<form  action="facture.php" method="post">	
+<input type="hidden" name="prix" value="300000">
+<input type="hidden" name="car" value="2">
 	<br/>
-<h3 align="center"> <b>Le prix est relatif aux options choisies !</b></h3><h4 align="center">à partir de <b>1.000.000 dh</b> , jusqu'à <b>1.500.000  dh</b></h4> 
+<h3 align="center"> <b>Le prix est relatif aux options choisies !</b></h3><h4 align="center">à partir de 300.000 dh, jusqu'à 390.000 dh</h4> 
  <hr/>
 
 <table >	
-	<tr align="center"> <td colspan="2"><h3><b>100% électrique</b></h3></td></tr>
+	
 	<tr height="100px">
 			<td><b>Version:</b></td>
 			<td >	<select name="version" >
-							<option value="Taycan 4S">Taycan 4S</option>
-							<option value="Taycan Turbo">Taycan Turbo &nbsp &nbsp (460 000 DH de plus) </option>
-							
+							<option value="1.5 TSI 130 BVM6 Life 1st ">1.5 TSI 130 BVM6 Life 1st   </option>
+							<option value=" 1.5 eTSI 150 DSG7 Life 1st"> 1.5 eTSI 150 DSG7 Life 1st  &nbsp &nbsp (10 000 DH de plus) </option>
+							<option value="2.0L TDI 150 DSG7 Life 1st">2.0L TDI 150 DSG7 Life 1st   &nbsp &nbsp (20 000 DH de plus) </option>
+							<option value="2.0L TDI 150 DSG7 Style 1st">2.0L TDI 150 DSG7 Style 1st &nbsp &nbsp (30 000 DH de plus) </option>
 							</select>  
 			</td>
 	
@@ -97,26 +103,24 @@
 			<td> <b>Boite Vitesse:</b>
 		    </td> <td>
 		                    <input type="radio" id="Manuelle" name="boite" value="Manuelle" checked><label for="Manuelle">Manuelle</label> 
-	                   <span>&nbsp;</span>  
-		                   
-	                    	<input type="radio" id="Automatique" name="boite" value="Automatique" checked> <label for="Automatique">Automatique &nbsp &nbsp ( 20 000 DH DE PLUS !)</label>
+	                   <span>&nbsp;</span>  	<input type="radio" id="Automatique" name="boite" value="Automatique"> <label for="Automatique">Automatique &nbsp &nbsp ( 30 000 DH DE PLUS !)</label>
 	              </td>
 	</tr>
 			
-	<tr height="130px">
+	<tr height="50px">
 				   <td><b>Puissance Fiscale Disponible :</b></td>
-		           <td><input type="radio" id="puiss" name="puiss" value="8-cv" checked> <label for="puiss"> 8 Cv </label>
+		           <td><input type="radio" id="puiss" name="puiss" value="8-ch" checked> <label for="puiss"> 8 Ch </label>
 				   
-		        
-					    <input type="radio" id="puiss3" name="puiss" value="12-ch"  > <label for="puiss3"> 12 Cv &nbsp &nbsp  (30 000 DH DE PLUS) </label>
+		           <input type="radio" id="puiss2" name="puiss" value="12-ch" > <label for="puiss2"> 12 Ch &nbsp &nbsp  (20 000 DH DE PLUS) </label>
 	</td>
     </tr>
 
 						
 	<tr height="180px"><td><b>Couleurs Disponibles :</b></td>
 						
-								<td>
-									<input type="radio" id="radio-beta" name="coul" value="Grise" checked >
+								<td><input type="radio" id="radio-alpha" name="coul" value="Jaune" checked>
+												<label for="radio-alpha">Jaune</label><br>
+									<input type="radio" id="radio-beta" name="coul" value="Grise" >
 												<label for="radio-beta">Gris</label><br>
 									<input type="radio" id="radio-gamma" name="coul" value="Blan">
 												<label for="radio-gamma">Blache</label></td>	
@@ -133,9 +137,9 @@
 					
 				
 </form>
-</div>
-</div>
-</section>
+					</div>
+				</div>
+			</section>
 <!-- Footer -->
 <footer id="footer">
 	<div class="inner">
@@ -178,3 +182,4 @@
 
 </body>
 </html>
+		

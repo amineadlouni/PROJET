@@ -1,9 +1,16 @@
+<?php 
+    session_start();
+    if(!isset($_SESSION['user'])){
+        header('Location:index.php');
+        die();
+    }
+?>
 <!DOCTYPE HTML>
 <!--
 -->
 <html>
 	<head>
-		<title>VOLKSWAGEN ARTEON </title>
+		<title>PORSCHE CAYENNE GTS </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -14,8 +21,9 @@
 
 		<!-- Header -->
 			<header id="header">
-				<span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
-				        <a class="logo" href="landing.php"><font color="red"> MON PROFIL : </font> </a>
+				       <span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
+				        <a class="logo" href="landing.php"><font color=red>MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+
 
 				<nav>
 					<a href="#menu">Menu</a>
@@ -24,42 +32,43 @@
 
 		<!-- Nav -->
 			<nav id="menu">
-			        <ul class="links">
-            <li><a href="index2.php">Home</a></li>
-            <li><a href="landing.php">profil</a></li>
-            <li><a href="#ID1">voitures</a></li>
-            <li><a href="#footer">contactez nous</a></li>
-            <li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
+				<ul class="links">
+					<li><a href="index2.php">Home</a></li>
+					<li><a href="landing.php">profil</a></li>
+					<li><a href="index2.php#ID1">voitures</a></li>
+					<li><a href="#footer">contactez nous</a></li>
+					<li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
 				</ul>
-						</nav>
+			</nav>
 
 		<!-- Heading -->
-			<div id="heading" style="background-image:url(./images/vwlogo.jpg)">
-				<h1>VOLKSWAGEN ARTEON </h1>
+			<div id="heading" style="background-image:url(./images/logoP.jpg)">
+				<h1>PORSCHE CAYENNE GTS 2020</h1>
 			</div>
 
 		<!-- Main -->
 			<section id="main" class="wrapper" style="background-color: rgb(41, 40, 40);">
 				<div class="inner">
 					<div class="content" style="background-color: rgb(233, 233, 233);">
-						<header align="center"  >
+						<header align="center" >
 							<h2>Fiche technique :</h2>
 						</header>
 						<section>
-							<table ><tr>
-								<td colspan="2"><img src="images/art2.jpg" width="100%" height="500px" alt="" /></td>
-								</tr>
-								<tr >
-								<td width="50%"><img src="images/art3.jpg" width="100%" height="350"   alt="" /></td>
-								<td width="50%"><img src="images/art1.jpg" width="100%" height="350"  alt="" /></td>
-								</tr>
-								</table>
+							   <table ><tr>
+                                <td colspan="2"><img src="images/ca2.jpg" width="100%" height="500px" alt="" /></td>
+                                </tr>
+                                <tr >
+                                <td width="50%"><img src="images/ca3.jpg" width="100%" height="350"   alt="" /></td>
+                                <td width="50%"><img src="images/p3.jpg" width="100%" height="350"  alt="" /></td>
+                                </tr>
+                                </table>
+                        
 						</section>
 						<form  action="facture.php" method="post">	
-<input type="hidden" name="prix" value="380000">
-<input type="hidden" name="car" value="4">
+<input type="hidden" name="prix" value="890000">
+<input type="hidden" name="car" value="7">
 	<br/>
-<h3 align="center"> <b>Le prix est relatif aux options choisies !</b></h3><h4 align="center">à partir de 380.000 dh, jusqu'à 470.0000 dh</h4> 
+<h3 align="center"> <b>Le prix est relatif aux options choisies !</b></h3><h4 align="center">à partir de <b>890.000 dh</b> , jusqu'à <b>1.280.000  dh</b></h4> 
  <hr/>
 
 <table >	
@@ -67,10 +76,10 @@
 	<tr height="100px">
 			<td><b>Version:</b></td>
 			<td >	<select name="version" >
-							<option value="2.0 TDI ADVANCE">2.0 TDI ADVANCE  </option>
-							<option value="2.0 TDI BUSINESS">2.0 TDI BUSINESS &nbsp &nbsp (20 000 DH de plus) </option>
-							
-							<option value="2.0 TDI ELEGANCE">2.0 TDI ELEGANCE &nbsp &nbsp (30 000 DH de plus) </option>
+							<option value="Diesel Classique"> Diesel Classique</option>
+							<option value="Diesel Platinium Edition ">Diesel Platinium Edition  &nbsp &nbsp (100 000 DH de plus) </option>
+							<option value="S">S  &nbsp &nbsp (200 000 DH de plus) </option>
+							<option value="GTS">GTS  &nbsp &nbsp (320 000 DH de plus) </option>
 							</select>  
 			</td>
 	
@@ -100,23 +109,24 @@
 	              </td>
 	</tr>
 			
-	<tr height="50px">
+	<tr height="130px">
 				   <td><b>Puissance Fiscale Disponible :</b></td>
-		           <td><input type="radio" id="puiss" name="puiss" value="8-ch" checked> <label for="puiss"> 8 Ch </label>
+		           <td><input type="radio" id="puiss" name="puiss" value="15-cv" checked> <label for="puiss"> 15 Cv </label>
 				   
-		           <input type="radio" id="puiss2" name="puiss" value="12-ch" > <label for="puiss2"> 12 Ch &nbsp &nbsp  (20 000 DH DE PLUS) </label>
+		           <input type="radio" id="puiss2" name="puiss" value="27-cv" > <label for="puiss2"> 27 Cv &nbsp &nbsp  (20 000 DH DE PLUS) </label>
+					   
+					    <input type="radio" id="puiss3" name="puiss" value="30-cv" > <label for="puiss3"> 30 Cv &nbsp &nbsp  (30 000 DH DE PLUS) </label>
 	</td>
     </tr>
 
 						
 	<tr height="180px"><td><b>Couleurs Disponibles :</b></td>
 						
-								<td><input type="radio" id="radio-alpha" name="coul" value="Jaune" checked>
-												<label for="radio-alpha">Jaune</label><br>
-									<input type="radio" id="radio-beta" name="coul" value="Grise" >
-												<label for="radio-beta">Gris</label><br>
-									<input type="radio" id="radio-gamma" name="coul" value="Blan">
-												<label for="radio-gamma">Blache</label></td>	
+								<td>
+									<input type="radio" id="radio-beta" name="coul" value="Noire" checked >
+												<label for="radio-beta">Noire</label><br>
+									<input type="radio" id="radio-gamma" name="coul" value="Rouge">
+												<label for="radio-gamma">Rouge</label></td>	
 	</tr>
 									<tr >
 										<td></td>
@@ -175,4 +185,3 @@
 
 </body>
 </html>
-		

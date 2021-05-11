@@ -1,9 +1,16 @@
+<?php 
+    session_start();
+    if(!isset($_SESSION['user'])){
+        header('Location:index.php');
+        die();
+    }
+?>
 <!DOCTYPE HTML>
 <!--
 -->
 <html>
 	<head>
-		<title>VOLKSWAGEN JETTA 2020</title>
+		<title>VOLKSWAGEN ARTEON </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -14,9 +21,8 @@
 
 		<!-- Header -->
 			<header id="header">
-				       <span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
-				        <a class="logo" href="landing.php"><font color=red> MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
-
+				<span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
+				        <a class="logo" href="landing.php"><font color="red"> MON PROFIL : </font> </a>
 
 				<nav>
 					<a href="#menu">Menu</a>
@@ -32,35 +38,35 @@
             <li><a href="#footer">contactez nous</a></li>
             <li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
 				</ul>
-			</nav>
+						</nav>
 
 		<!-- Heading -->
 			<div id="heading" style="background-image:url(./images/vwlogo.jpg)">
-				<h1>VOLKSWAGEN JETTA </h1>
+				<h1>VOLKSWAGEN ARTEON </h1>
 			</div>
 
 		<!-- Main -->
 			<section id="main" class="wrapper" style="background-color: rgb(41, 40, 40);">
 				<div class="inner">
 					<div class="content" style="background-color: rgb(233, 233, 233);">
-						<header align="center" >
+						<header align="center"  >
 							<h2>Fiche technique :</h2>
 						</header>
 						<section>
 							<table ><tr>
-								<td colspan="2"><img src="images/jt2.jpg" width="100%" height="500px" alt="" /></td>
+								<td colspan="2"><img src="images/art2.jpg" width="100%" height="500px" alt="" /></td>
 								</tr>
 								<tr >
-								<td width="50%"><img src="images/jt3.jpg" width="100%" height="350px"  alt="" /></td>
-								<td width="50%"><img src="images/jet1.jpeg" width="100%" height="350px" alt="" /></td>
+								<td width="50%"><img src="images/art3.jpg" width="100%" height="350"   alt="" /></td>
+								<td width="50%"><img src="images/art1.jpg" width="100%" height="350"  alt="" /></td>
 								</tr>
 								</table>
 						</section>
 						<form  action="facture.php" method="post">	
-<input type="hidden" name="prix" value="300000">
-<input type="hidden" name="car" value="6">
+<input type="hidden" name="prix" value="380000">
+<input type="hidden" name="car" value="4">
 	<br/>
-<h3 align="center"> <b>Le prix est relatif aux options choisies !</b></h3><h4 align="center">à partir de 300.000 dh, jusqu'à 390.000 dh</h4> 
+<h3 align="center"> <b>Le prix est relatif aux options choisies !</b></h3><h4 align="center">à partir de 380.000 dh, jusqu'à 470.0000 dh</h4> 
  <hr/>
 
 <table >	
@@ -68,10 +74,10 @@
 	<tr height="100px">
 			<td><b>Version:</b></td>
 			<td >	<select name="version" >
-							<option value="1.5 TSI 130 Autobahn">1.5 TSI 130 Autobahn   </option>
-							<option value=" 1.5 eTSI 150 DSG7 Life 1st"> 1.5 eTSI 150 DSG7 Life 1st  &nbsp &nbsp (10 000 DH de plus) </option>
-							<option value="2.0L TDI 150 DSG7 Life 1st">2.0L TDI 150 DSG7 Life 1st   &nbsp &nbsp (20 000 DH de plus) </option>
-							<option value="2.0L TDI 150 DSG7 Style 1st">2.0L TDI 150 DSG7 Style 1st &nbsp &nbsp (30 000 DH de plus) </option>
+							<option value="2.0 TDI ADVANCE">2.0 TDI ADVANCE  </option>
+							<option value="2.0 TDI BUSINESS">2.0 TDI BUSINESS &nbsp &nbsp (20 000 DH de plus) </option>
+							
+							<option value="2.0 TDI ELEGANCE">2.0 TDI ELEGANCE &nbsp &nbsp (30 000 DH de plus) </option>
 							</select>  
 			</td>
 	
@@ -112,11 +118,12 @@
 						
 	<tr height="180px"><td><b>Couleurs Disponibles :</b></td>
 						
-								<td><input type="radio" id="radio-alpha" name="coul" value="Rouge" checked>
-												<label for="radio-alpha">Rouge</label><br>
+								<td><input type="radio" id="radio-alpha" name="coul" value="Jaune" checked>
+												<label for="radio-alpha">Jaune</label><br>
 									<input type="radio" id="radio-beta" name="coul" value="Grise" >
 												<label for="radio-beta">Gris</label><br>
-									</td>	
+									<input type="radio" id="radio-gamma" name="coul" value="Blan">
+												<label for="radio-gamma">Blache</label></td>	
 	</tr>
 									<tr >
 										<td></td>
@@ -130,7 +137,7 @@
 					
 				
 </form>
-					</div>
+							</div>
 				</div>
 			</section>
 <!-- Footer -->

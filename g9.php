@@ -1,9 +1,16 @@
+<?php 
+    session_start();
+    if(!isset($_SESSION['user'])){
+        header('Location:index.php');
+        die();
+    }
+?>
 <!DOCTYPE HTML>
 <!--
 -->
 <html>
 	<head>
-		<title>TOUAREG 2020</title>
+		<title>PORSCHE tycan 2020</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -15,7 +22,7 @@
 		<!-- Header -->
 			<header id="header">
 				       <span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
-				        <a class="logo" href="landing.php"><font color=red>MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+				        <a class="logo" href="landing.php"><font color="red">MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
 
 
 				<nav>
@@ -35,44 +42,43 @@
 			</nav>
 
 		<!-- Heading -->
-			<div id="heading" style="background-image:url(./images/vwlogo.jpg)">
-				<h1>volkswagen touareg </h1>
+		<div id="heading" style="background-image:url(./images/logoP.jpg)">
+				<h1>PORSCHE TYCAN</h1>
 			</div>
 
 		<!-- Main -->
 			<section id="main" class="wrapper" style="background-color: rgb(41, 40, 40);">
 				<div class="inner">
 					<div class="content" style="background-color: rgb(233, 233, 233);">
-						<header align="center"  >
+						<header align="center" >
 							<h2>Fiche technique :</h2>
-						</header>
+						</header>	
 						<section>
 							<table ><tr>
-								<td colspan="2"><img src="images/to2.jpg" width="100%" height="500px" alt="" /></td>
+								<td colspan="2"><img src="images/ty3.jpg" width="100%" height="500px" alt="" /></td>
 								</tr>
 								<tr >
-								<td width="50%"><img src="images/to3.jpg" width="100%"  alt="" /></td>
-								<td width="50%"><img src="images/to1.jpg" width="100%"  alt="" /></td>
+								<td><img src="images/ty1.jpg" width="100%"  alt="" /></td>
+								<td><img src="images/ty2.jpg" width="100%"  alt="" /></td>
 								</tr>
+								
 								</table>
 						</section>
-						<form  action="facture.php" method="post">	
-<input type="hidden" name="prix" value="470000">
-<input type="hidden" name="car" value="1">
-
+<form  action="facture.php" method="post">	
+<input type="hidden" name="prix" value="1000000">
+<input type="hidden" name="car" value="9">
 	<br/>
-<h3 align="center"> <b>Le prix est relatif aux options choisies !</b></h3><h4 align="center">à partir de 470.000 dh, jusqu'à 830.000 dh</h4> 
+<h3 align="center"> <b>Le prix est relatif aux options choisies !</b></h3><h4 align="center">à partir de <b>1.000.000 dh</b> , jusqu'à <b>1.500.000  dh</b></h4> 
  <hr/>
 
 <table >	
-	
+	<tr align="center"> <td colspan="2"><h3><b>100% électrique</b></h3></td></tr>
 	<tr height="100px">
 			<td><b>Version:</b></td>
 			<td >	<select name="version" >
-							<option value="CONFORT+">3.0 V6 TDI 259 CONFORT+  &nbsp &nbsp (inclue)</option>
-							<option value="ATMOSPHERE+">3.0 V6 TDI 259 ATMOSPHERE+  &nbsp &nbsp (100 000 DH de plus) </option>
-							<option value="ELEGANCE+">3.0 V6 TDI 259 ELEGANCE+   &nbsp &nbsp (200 000 DH de plus) </option>
-							<option value="R-LINE">3.0 V6 TDI 259 R-LINE  &nbsp &nbsp (300 000 DH de plus) </option>
+							<option value="Taycan 4S">Taycan 4S</option>
+							<option value="Taycan Turbo">Taycan Turbo &nbsp &nbsp (460 000 DH de plus) </option>
+							
 							</select>  
 			</td>
 	
@@ -87,35 +93,40 @@
 						
 						
 	<tr height="60px">
-			<td> <b>Jantes:</b> </td> <td> <input type="radio" id="jant1" name="jant" value="17-pouces" checked> <label for="jant1">17 Pouces  </label>
-					                       <input type="radio" id="jant2" name="jant" value="19-pouces"><label for="jant2">19 Pouces &nbsp &nbsp (30 000 DH DE PLUS !) </label> </td>	
-	</tr><br/><br/><br/>
+			<td> <b>Jantes:</b> 
+		   </td>
+		<td> <input type="radio" id="jant1" name="jant" value="15-Pouces" checked> <label for="jant1">15 Pouces  </label>
+					<input type="radio" id="jant2" name="jant" value="18-Pouces"><label for="jant2">18 Pouces &nbsp &nbsp  (10 000 DH DE PLUS) </label>
+		</td>	
+	</tr>  <br/><br/><br/>
 
-	             <tr height="60px"	>
-			         <td> <b>Boite Vitesse:</b>
-		             </td>
-		                <td>
-		                                   <input type="radio" id="Manuelle" name="boite" value="Manuelle" checked><label for="Manuelle">Manuelle</label> 
-	                                           <span>&nbsp;</span>  
-		                                   <input type="radio" id="Automatique" name="boite" value="Automatique"> <label for="Automatique">Automatique &nbsp &nbsp ( 30 000 DH DE PLUS !)</label>
-	                   </td>
-	            </tr>
+	<tr height="60px"	>
+			<td> <b>Boite Vitesse:</b>
+		    </td> <td>
+		                    <input type="radio" id="Manuelle" name="boite" value="Manuelle" checked><label for="Manuelle">Manuelle</label> 
+	                   <span>&nbsp;</span>  
+		                   
+	                    	<input type="radio" id="Automatique" name="boite" value="Automatique" checked> <label for="Automatique">Automatique &nbsp &nbsp ( 20 000 DH DE PLUS !)</label>
+	              </td>
+	</tr>
 			
-		  	
-             	<tr height="50px">
-				   <td><b>Puissance Fiscale Disponible :</b></td><td><input type="radio" id="puiss" name="puiss" value="14-ch" checked> <label for="puiss"> 14 Ch </label>
-				   </td>
-	            </tr>
+	<tr height="130px">
+				   <td><b>Puissance Fiscale Disponible :</b></td>
+		           <td><input type="radio" id="puiss" name="puiss" value="8-cv" checked> <label for="puiss"> 8 Cv </label>
+				   
+		        
+					    <input type="radio" id="puiss3" name="puiss" value="12-ch"  > <label for="puiss3"> 12 Cv &nbsp &nbsp  (30 000 DH DE PLUS) </label>
+	</td>
+    </tr>
 
 						
 	<tr height="180px"><td><b>Couleurs Disponibles :</b></td>
 						
-								<td><input type="radio" id="radio-alpha" name="coul" value="Bleu" checked>
-												<label for="radio-alpha">Bleu</label><br>
-									<input type="radio" id="radio-beta" name="coul" value="Noir" >
-												<label for="radio-beta">Noir</label><br>
-									<input type="radio" id="radio-gamma" name="coul" value="Gris">
-												<label for="radio-gamma">Gris</label></td>	
+								<td>
+									<input type="radio" id="radio-beta" name="coul" value="Grise" checked >
+												<label for="radio-beta">Gris</label><br>
+									<input type="radio" id="radio-gamma" name="coul" value="Blan">
+												<label for="radio-gamma">Blache</label></td>	
 	</tr>
 									<tr >
 										<td></td>
@@ -129,11 +140,9 @@
 					
 				
 </form>
-					</div>
-				</div>
-			</section>
-				
-	
+</div>
+</div>
+</section>
 <!-- Footer -->
 <footer id="footer">
 	<div class="inner">
@@ -147,7 +156,7 @@
 				<ul class="alt">
 					<li><a href="#">amine.eladlouni@usmba.ac.ma</a></li>
 					<li><a href="#">aimane.elismaili@usmba.ac.ma</a></li>
-					<li><a href="#">Fahd.kaghat@usmba.ac.ma</a></li>
+					<li><a href="#">a.ennadi@usmba.ac.ma</a></li>
 					
 				</ul>
 			</section>
@@ -157,7 +166,7 @@
 					<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
 					<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
 					<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
-				
+					<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
 				</ul>
 			</section>
 		</div>
@@ -176,4 +185,3 @@
 
 </body>
 </html>
-		

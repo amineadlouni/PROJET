@@ -83,7 +83,7 @@
                 <section>
                     <div class="content" style="background-color: rgb(83, 83, 83);">
                         <header>
-                            <a href="g1.html">
+                            <a href="g1.php">
                                 <img src="images/touarg_trans.jpg" height="190px" width="260px" alt="" />
                                 <h3 style="color: rgb(255, 255, 255); text-decoration: none ">VOLKSWAGEN TOUAREG  </h3>
                                        <p  style="color: orangE; font-family: Arial; font-weight: bold
@@ -96,7 +96,7 @@
                 <section>
                     <div class="content" style="background-color: rgb(83, 83, 83);">
                         <header>
-                            <a href="g2.html">
+                            <a href="g2.php">
                                 <img src="images/golf_8_transver.jpg" height="190px" width="260px" alt="" />
                                 <h3 style="color: rgb(255, 255, 255);">volkswagen GOLF 8 </h3>
                         </header>
@@ -108,7 +108,7 @@
                 <section>
                     <div class="content" style="background-color: rgb(83, 83, 83);">
                         <header>
-                            <a href="g3.html">
+                            <a href="g3.php">
                                 <img src="images/tiguan_transv.jpg" height="190px" width="260px" alt="" />
                                 <h3 style="color: rgb(255, 255, 255);">volkswagen TIGUAN  </h3>
                         </header>
@@ -120,7 +120,7 @@
                 <section>
                     <div class="content" style="background-color: rgb(83, 83, 83);">
                         <header>
-                            <a href="g4.html">
+                            <a href="g4.php">
                                 <img src="images/vo.jpg" height="150px" width="260px" alt="" />
                                 <h3 style="color: rgb(255, 255, 255);">volkswagen ARTEON </h3>
                             </a>
@@ -131,7 +131,7 @@
                 <section>
                     <div class="content" style="background-color: rgb(83, 83, 83);">
                         <header>
-                            <a href="g5.html">
+                            <a href="g5.php">
                                 <img src="images/images.jpg" height="150px" width="260px" alt="" />
                                 <h3 style="color: rgb(255, 255, 255);">VOLKSWAGEN PASSAT </h3>
                         </header>
@@ -143,7 +143,7 @@
                 <section>
                     <div class="content" style="background-color: rgb(83, 83, 83);">
                         <header>
-                            <a href="g6.html">
+                            <a href="g6.php">
                                 <img src="images/20.jpg" height="150px" width="260px" alt="" />
                                 <h3 style="color: rgb(255, 255, 255);">VOLKSWAGEN JETTA </h3>
                         </header>
@@ -155,7 +155,7 @@
                 <section>
                     <div class="content" style="background-color: rgb(83, 83, 83);">
                         <header>
-                            <a href="g7.html">
+                            <a href="g7.php">
                                 <img src="images/1611860012059.jpg" height="150px" width="260px" alt="" />
                                 <h3 style="color: rgb(255, 255, 255);">PORsCHE CAYENNE GTS </h3>
                             </a>
@@ -166,7 +166,7 @@
                 <section>
                     <div class="content" style="background-color: rgb(83, 83, 83);">
                         <header>
-                            <a href="g8.html">
+                            <a href="g8.php">
                                 <img src="images/1611860189063.jpg" height="150px" width="260px" alt="" />
                                 <h3 style="color: rgb(255, 255, 255);">PORsCHE 911 </h3>
                         </header>
@@ -178,7 +178,7 @@
                 <section>
                     <div class="content" style="background-color: rgb(83, 83, 83);">
                         <header>
-                            <a href="g9.html">
+                            <a href="g9.php">
                                 <img src="images/1611860367690.jpg" height="150px" width="260px" alt="" />
                                 <h3 style="color: rgb(255, 255, 255);">porsche taycan </h3>
                         </header>
