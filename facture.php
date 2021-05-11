@@ -22,8 +22,8 @@
 
 		<!-- Header -->
 			<header id="header">
-				       <span><button class="small" onclick="location.href='index2.php'">Deutsch cars FES </button></span> 
-				        <a class="logo" href="landing.php"><font color=red>PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+				       <span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
+				        <a class="logo" href="landing.php"><font color=red>MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
 
 
 				<nav>
@@ -174,7 +174,7 @@
 						?>
 						<hr/>
 
-						<h2 align="right">totale à payer : <?php echo number_format($som, 2, ',', ' ')." Dh HT";?></h2>
+						<h2 align="right">totale à payer : <p style="color: orangE; font-family: Arial; font-weight: bold"> <?php echo number_format($som, 2, ',', ' ')." Dh TTC";?></h2></p>
 						<div align=right>
 						<table float=none >
 						

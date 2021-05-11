@@ -23,9 +23,9 @@
 
 		<!-- Header -->
 			<header id="header">
-                <span><button class="small" onclick="location.href='index2.php'">Deutsch cars FES </button></span> 
+                <span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
 				  
-				        <a class="logo" href="landing.php"><font color=red>PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+				        <a class="logo" href="landing.php"><font color=red>MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
 
 
 				<nav>
@@ -67,7 +67,7 @@
                        <hr />
 
                         <fieldset>
-                            <label>information</label>
+                            <label> Vos Information</label>
                             <BR>
                            
                             <table>
@@ -105,7 +105,7 @@
                                <td><button class="primary  small" onclick="location.href='deconnexion.php'" id="pass">Déconnexion</button></td><td width=20px></td>
                        <form method="post" >
                            
-                           <td><button class="small" onclick="location.href='landing.php#pass'" type="submit" name="s1" >changer le mote de passe</button></td>
+                           <td><button class="small" onclick="location.href='landing.php#pass'" type="submit" name="s1" >Changer le mote de passe</button></td>
                            <tr>
                            </table>
                        </form>

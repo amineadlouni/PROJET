@@ -34,7 +34,7 @@
 
 		<!-- Header -->
 			<header id="header">
-            <a class="logo" href="index2.php">Deutsch cars fes</a>
+            <a class="logo" href="index2.php">Deutsch Cars FES</a>
 				<nav>
 					<a href="#menu">Menu</a>
 				</nav>

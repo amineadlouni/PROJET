@@ -3,7 +3,7 @@
 
 <html>
 	<head>
-		<title>connexion</title>
+		<title>Connexion</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<meta name="description" content="" />
@@ -14,7 +14,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				       <span><button class="small" onclick="location.href='index2.php'">Deutsch cars FES </button></span> 
+				       <span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
 				    
 
 
