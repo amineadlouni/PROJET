@@ -48,7 +48,7 @@
  
 
             <h1 style="font-size:102px; COLOR: rgb(184, 48, 48);font-weight: 1000;background-image: -moz-linear-gradient(rgb(80, 46, 46),rgb(129, 46, 46),rgb(170, 26, 26));">D.C.F</h1>
-            <p>Fondé par <a href="https://www.linkedin.com/in/amine-el-adlouni-7a9060197/" target="_blank">Amine El adlouni</a> et<a href="https://www.linkedin.com/in/aimane-el-ismaili-ab179a157/" > Aimane El ismaili </a> au but du projet
+            <p>Fondé par <a href="https://www.linkedin.com/in/amine-el-adlouni-7a9060197/" target="_blank">Amine El adlouni</a> et<a href="https://www.linkedin.com/in/aimane-el-ismaili-ab179a157/" > Aimane El ismaili </a> au but du mini-projet
                de Monsieur Kaghat</p>
                 
           <br/>
@@ -56,7 +56,7 @@
            <br/>
         </div>
 
-        <video autoplay loop muted playsinline src="images/banner.mp4"></video>
+        <video autoplay loop muted playsinline src="images/vwlogo.jpg"></video>
     </section>
     <section style="background-color: rgb(46, 46, 46);background-image: -moz-linear-gradien(grey);">
 <BR>
@@ -184,7 +184,7 @@
                         </header>
                         </a>
                          <p  style="color: orangE; font-family: Arial; font-weight: bold
-								  "> PRIX : 1.000.000 - 1.500.000 DH  </p>
+								  "> PRIX : 1.000.000 - 1.520.000 DH  </p>
                     </div>
                 </section>
                 </div>

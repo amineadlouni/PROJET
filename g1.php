@@ -60,8 +60,8 @@
 								<td colspan="2"><img src="images/to2.jpg" width="100%" height="500px" alt="" /></td>
 								</tr>
 								<tr >
-								<td width="50%"><img src="images/to3.jpg" width="100%"  alt="" /></td>
-								<td width="50%"><img src="images/to1.jpg" width="100%"  alt="" /></td>
+								<td width="50%"><img src="images/to3.jpg" width="100%" height="350px" alt="" /></td>
+								<td width="50%"><img src="images/to1.jpg" width="100%" height="350px" alt="" /></td>
 								</tr>
 								</table>
 						</section>

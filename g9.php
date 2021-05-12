@@ -68,7 +68,7 @@
 <input type="hidden" name="prix" value="1000000">
 <input type="hidden" name="car" value="9">
 	<br/>
-<h3 align="center"> <b>Le prix est relatif aux options choisies !</b></h3><h4 align="center">à partir de <b>1.000.000 dh</b> , jusqu'à <b>1.500.000  dh</b></h4> 
+<h3 align="center"> <b>Le prix est relatif aux options choisies !</b></h3><h4 align="center">à partir de <b>1.000.000 dh</b> , jusqu'à <b>1.520.000  dh</b></h4> 
  <hr/>
 
 <table >	
