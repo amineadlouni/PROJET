@@ -18,6 +18,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="WVv7ms0r"></script>
 
 		<!-- Header -->
 			<header id="header" style="background-color: rgb(46, 46, 46);">
@@ -136,8 +138,13 @@
 					
 				
 </form>
+<br>
+<hr>
+<div class="fb-comments" data-colorscheme="dark" data-href="https://www.facebook.com/100020266210333/videos/743499059668961/" data-width="1000" data-numposts="5"></div>
+
 					</div>
 				</div>
+
 			</section>
 				
 	
