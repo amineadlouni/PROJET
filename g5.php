@@ -22,7 +22,7 @@
 		<!-- Header -->
 			<header id="header">
 				       <span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
-				        <a class="logo" href="landing.php"><font color=red> MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+				        <a class="logo" href="profil.php"><font color=red> MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
 
 
 				<nav>
@@ -34,8 +34,8 @@
 			<nav id="menu">
 			        <ul class="links">
             <li><a href="index2.php">Home</a></li>
-            <li><a href="landing.php">profil</a></li>
-            <li><a href="#ID1">voitures</a></li>
+            <li><a href="profil.php">profil</a></li>
+            <li><a href="index2.php#ID1">voitures</a></li>
             <li><a href="#footer">contactez nous</a></li>
             <li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
 				</ul>	</nav>

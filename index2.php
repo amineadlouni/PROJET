@@ -20,7 +20,7 @@
     <!-- Header -->
     <header id="header" style="background-color: rgb(46, 46, 46);">
        <span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
-				        <a class="logo" href="landing.php"><font color=red>MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+				        <a class="logo" href="profil.php"><font color=red>MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
 
         <nav>
             <a href="#menu">Menu</a>
@@ -31,8 +31,8 @@
     <nav id="menu">
         <ul class="links">
             <li><a href="index2.php">Home</a></li>
-            <li><a href="landing.php">profil</a></li>
-            <li><a href="#ID1">voitures</a></li>
+            <li><a href="profil.php">profil</a></li>
+            <li><a href="index2.php#ID1">voitures</a></li>
             <li><a href="#footer">contactez nous</a></li>
             <li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
         </ul>
@@ -56,7 +56,7 @@
            <br/>
         </div>
 
-        <video autoplay loop muted playsinline src="images/vwlogo.jpg"></video>
+        <video autoplay loop muted playsinline src="images/bann1er.mp4"></video>
     </section>
     <section style="background-color: rgb(46, 46, 46);background-image: -moz-linear-gradien(grey);">
 <BR>

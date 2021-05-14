@@ -24,7 +24,7 @@
 		<!-- Header -->
 			<header id="header" style="background-color: rgb(46, 46, 46);">
        <span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
-				        <a class="logo" href="landing.php"><font color=red>MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+				        <a class="logo" href="profil.php"><font color=red>MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
 
 
 				<nav>
@@ -36,7 +36,7 @@
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index2.php">Home</a></li>
-					<li><a href="landing.php">profil</a></li>
+					<li><a href="profil.php">profil</a></li>
 					<li><a href="index2.php#ID1">voitures</a></li>
 					<li><a href="#footer">contactez nous</a></li>
 					<li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
@@ -60,8 +60,8 @@
 								<td colspan="2"><img src="images/to2.jpg" width="100%" height="500px" alt="" /></td>
 								</tr>
 								<tr >
-								<td width="50%"><img src="images/to3.jpg" width="100%" height="350px" alt="" /></td>
-								<td width="50%"><img src="images/to1.jpg" width="100%" height="350px" alt="" /></td>
+								<td width="50%"><img src="images/to3.jpg" width="100%"  alt="" /></td>
+								<td width="50%"><img src="images/to1.jpg" width="100%"  alt="" /></td>
 								</tr>
 								</table>
 						</section>

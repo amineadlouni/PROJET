@@ -25,7 +25,7 @@
 			<header id="header">
                 <span><button class="small" onclick="location.href='index2.php'">Deutsch Cars FES </button></span> 
 				  
-				        <a class="logo" href="landing.php"><font color=red>MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
+				        <a class="logo" href="profil.php"><font color=red>MON PROFIL : </font><?php echo strtolower($_SESSION['user']); ?></a>
 
 
 				<nav>
@@ -37,7 +37,7 @@
 			<nav id="menu">
 			        <ul class="links">
             <li><a href="index2.php">Home</a></li>
-            <li><a href="landing.php">profil</a></li>
+            <li><a href="profil.php">profil</a></li>
             <li><a href="index2.php#ID1">voitures</a></li>
             <li><a href="#footer">contactez nous</a></li>
             <li><button class="primary  small" onclick="location.href='deconnexion.php'" >Déconnexion</button></li>
@@ -61,7 +61,7 @@
                 <div class="text-center">
                         <h1 >PROFIL</h1>
                         <h4 align=right>bonjour, <?php echo $_SESSION['pseudo']; ?> ,vous avez <font color=RED> <?php echo $_SESSION['nbr']; ?> </font> commandes actives</h4>
-                        <form method="get" align=right ><button type="submit" class="small" onclick="location.href='landing.php'" name="btn" >suprimer les commandes</button></form>
+                        <form method="get" align=right ><button type="submit" class="small" onclick="location.href='profil.php'" name="btn" >suprimer les commandes</button></form>
                     
                        
                        <hr />
@@ -105,7 +105,7 @@
                                <td><button class="primary  small" onclick="location.href='deconnexion.php'" id="pass">Déconnexion</button></td><td width=20px></td>
                        <form method="post" >
                            
-                           <td><button class="small" onclick="location.href='landing.php#pass'" type="submit" name="s1" >Changer le mote de passe</button></td>
+                           <td><button class="small" onclick="location.href='profil.php#pass'" type="submit" name="s1" >Changer le mote de passe</button></td>
                            <tr>
                            </table>
                        </form>
