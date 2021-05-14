@@ -56,7 +56,7 @@
            <br/>
         </div>
 
-        <video autoplay loop muted playsinline src="images/vwlogo.jpg"></video>
+        <video autoplay loop muted playsinline src="images/banner.mp4"></video>
     </section>
     <section style="background-color: rgb(46, 46, 46);background-image: -moz-linear-gradien(grey);">
 <BR>

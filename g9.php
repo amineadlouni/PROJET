@@ -123,9 +123,9 @@
 	<tr height="180px"><td><b>Couleurs Disponibles :</b></td>
 						
 								<td>
-									<input type="radio" id="radio-beta" name="coul" value="Grise" checked >
-												<label for="radio-beta">Gris</label><br>
-									<input type="radio" id="radio-gamma" name="coul" value="Blan">
+									<input type="radio" id="radio-beta" name="coul" value="Rouge" checked >
+												<label for="radio-beta">Rouge</label><br>
+									<input type="radio" id="radio-gamma" name="coul" value="Blanche">
 												<label for="radio-gamma">Blache</label></td>	
 	</tr>
 									<tr >
@@ -156,7 +156,7 @@
 				<ul class="alt">
 					<li><a href="#">amine.eladlouni@usmba.ac.ma</a></li>
 					<li><a href="#">aimane.elismaili@usmba.ac.ma</a></li>
-					<li><a href="#">a.ennadi@usmba.ac.ma</a></li>
+					 
 					
 				</ul>
 			</section>
