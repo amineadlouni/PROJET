@@ -119,7 +119,7 @@
 				<ul class="alt">
 					<li><a href="#">amine.eladlouni@usmba.ac.ma</a></li>
 					<li><a href="#">aimane.elismaili@usmba.ac.ma</a></li>
-					<li><a href="#">a.ennadi@usmba.ac.ma</a></li>
+					<li><a href="#">Fahd.kaghat@usmba.ac.ma</a></li>
 					
 				</ul>
 			</section>

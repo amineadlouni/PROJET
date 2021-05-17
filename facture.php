@@ -44,10 +44,10 @@
 		<!-- Heading -->
 			<div id="heading" style="background-image:url(./images/<?php 
 			
-			$a=array("0","to1","gf81","ti1","art3","pst2","jt2","ca2","912","ty2" );
-			$b=array("0","volkswagen touareg","volkswagen golf 8","volkswagen tiguan","volkswagen arteon","volkswagen passat","volkswagen jetta","porsche cayenne","porsche 911","porsche tycan" );
-			for($i=1;$i<=10;$i++){
-				if ($i==$_POST['car'])
+			$a=array("0","to1","gf81","ti1","art3","pst2","jt2","ca2","912","ty2" ,"gt3");
+			$b=array("0","volkswagen touareg","volkswagen golf 8","volkswagen tiguan","volkswagen arteon","volkswagen passat","volkswagen jetta","porsche cayenne","porsche 911","porsche tycan" , "porsche gt3");
+			for($i=1;$i<=12;$i++){
+				if ($i==$_POST['car'])	
 				{echo $a[$i];
 				$c=$b[$i];
 				}

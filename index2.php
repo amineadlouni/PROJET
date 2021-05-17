@@ -56,7 +56,7 @@
            <br/>
         </div>
 
-        <video autoplay loop muted playsinline src="images/bann1er.mp4"></video>
+        <video autoplay loop muted playsinline src="images/bann1er.mp4  "></video>
     </section>
     <section style="background-color: rgb(46, 46, 46);background-image: -moz-linear-gradien(grey);">
 <BR>
@@ -175,6 +175,7 @@
 								  "> PRIX : 1.200.000 - 1.520.000 DH  </p>
                     </div>
                 </section>
+              <?php require 'cache.php'; ?>
                 <section>
                     <div class="content" style="background-color: rgb(83, 83, 83);">
                         <header>
@@ -187,9 +188,13 @@
 								  "> PRIX : 1.000.000 - 1.520.000 DH  </p>
                     </div>
                 </section>
+
+
+
+
                 </div>
                 </div>
-    </section>
+
 
     <!-- CTA -->
     <section id="cta" class="wrapper" style="background-image: linear-gradient(rgba(192, 27, 38, 0.527), rgba(20, 44, 179, 0.514)), url(./images/FST.jpg)" ;>
@@ -223,7 +228,7 @@
                 <section>
                     <div class="content">
                         <blockquote>
-                            <p> Conception HTML de site et création base de donnée    </p>
+                            <p> Conception de site et création base de donnée    </p>
                         </blockquote>
                         <div class="author">
                             <div class="image">
