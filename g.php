@@ -68,7 +68,7 @@ require_once 'config.php';
 								
 								</table>
 						</section>
-<form  action="facture.php" method="post">	
+<form  action="facture.php?n=<?php echo $data['nom'];?>&p=<?php echo $data['prix'];?>&im=<?php echo $data['image'];?>" method="post">	
 <input type="hidden" name="prix" value="<?PHP ECHO $data['prix'];?>">
 <input type="hidden" name="car" value="10">
 	<br/>
@@ -134,7 +134,7 @@ require_once 'config.php';
 	</tr>
 									<tr >
 										<td></td>
-										<td><input type="submit" name="submit" value="Envoyer la commande" >&nbsp &nbsp <input type="reset" name="reset" value="Annuler" ></td>
+										<td><input type="submit" name="submit" value="Envoyer la commande" >&nbsp; &nbsp; <input type="reset" name="reset" value="Annuler" ></td>
 										
 									</tr>
 					</table>

@@ -44,20 +44,26 @@
 		<!-- Heading -->
 			<div id="heading" style="background-image:url(./images/<?php 
 			
-			$a=array("0","to1","gf81","ti1","art3","pst2","jt2","ca2","912","ty2" ,"gt3");
-			$b=array("0","volkswagen touareg","volkswagen golf 8","volkswagen tiguan","volkswagen arteon","volkswagen passat","volkswagen jetta","porsche cayenne","porsche 911","porsche tycan" , "porsche gt3");
+			$a=array("0","to1","gf81","ti1","art3","pst2","jt2","ca2","912","ty2" );
+			$b=array("0","volkswagen touareg","volkswagen golf 8","volkswagen tiguan","volkswagen arteon","volkswagen passat","volkswagen jetta","porsche cayenne","porsche 911","porsche tycan" );
+			if(!isset($_GET['im']))
+			{
 			for($i=1;$i<=12;$i++){
 				if ($i==$_POST['car'])	
-				{echo $a[$i];
+				{echo $a[$i].".jpg";
 				$c=$b[$i];
 				}
 
-			}
 
-			?>.jpg)">
+			}
+		}else
+			echo $_GET['im'];
+
+
+			?>)">
 
 		
-				<h1><?php echo $c;?> </h1>
+				<h1><?php if(!empty($_GET['n']))echo $_GET['n']; else echo $c;?> </h1>
 			</div>
 
 		<!-- Main -->
@@ -129,7 +135,7 @@
 							<th ><h3>Options que vous avez choisies</h3></th><th><h3>specification</h3></th><th><h3>prix d'option</h3></th>
 							</tr>
 				<tr align="center" height="70">
-							<td >Prix Sans Options</td><td>-----------></td><td><?php  echo  $_POST['prix'];?></td>		
+							<td >Prix Sans Options</td><td>-----------></td><td><?php  if(!isset($_GET['p'])) echo $_POST['prix']; else echo $_GET['p'];?> DH</td>		
 							
 						</tr>
 				<tr align="center">
